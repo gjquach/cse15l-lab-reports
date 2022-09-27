@@ -1,1 +1,3 @@
-Hello! Welcome to Gabby's Lab 1!
+Hello! Welcome to Gabby's CSE 15L Labs!
+
+1. [Lab 0: ]
