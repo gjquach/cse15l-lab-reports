@@ -1,3 +1,3 @@
-Hello! Welcome to Gabby's CSE 15L Lab Reports!
+Welcome to Gabby's CSE 15L Lab Reports!
 
-1. [Lab 0: Setup](https://gjquach.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+1. [Lab 1: Setup](https://gjquach.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
