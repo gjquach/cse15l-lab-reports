@@ -24,4 +24,5 @@ where I study computer science and compete on the NCAA DI women's volleyball tea
 
 ## CSE 15L Lab Reports
 
-1.  [Lab Report 1](https://gjquach.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+1.  [Lab Report 0](https://gjquach.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+2. [Lab Report 1](https://gjquach.github.io/cse15l-lab-reports/lab-report-1-week-1.html)
