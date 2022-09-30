@@ -1,14 +1,16 @@
-# Lab 1
+# Lab 1 Report
 ## 1: Installing VS Code
 - I already had VS Code downloaded from previous use, but I believe you can install for your respective OS at https://code.visualstudio.com/download 
 - Once installed and opened, VS Code should look something like this:
 ![VS Code Starting Screen](img1.png)
 - To open terminal, do CTRL + `
+---
 
 ## 2: Remotely Connecting
 - Use command `ssh cs15lfa22xx@ieng6.ucsd.edu` (where xx is your two letter sign in)
 - You will then be prompted to type your account password (the field will remain blank)
   ![SSH](img2.png)
+---
 
 ## 3: Trying Some Commands
 **On Remote Computer:**
@@ -16,10 +18,12 @@
 ![Commands on Remote Computer](img3.png)
 
 - Exit the remote computer using CTRL-D or the command exit
+---
 
 **On Personal Computer:**
 - Type the commands `cd`, `ls`, `pwd`, `mkdir <directory>`, and `cp <file/directory>` on your personal computer
 ![Commands on Personal Computer](img4.png)
+---
 
 ## 4: Moving Files with SCP
 - Create and save a file on your personal computer called WhereAmI.java with the following:
@@ -42,6 +46,7 @@ class WhereAmI {
 **On Remote Computer:**
 - Check that the file was copied over by running the commands `javac WhereAmI.java` and `java WhereAmI`
 ![](img7.png)
+---
 
 ## 5: Setting an SSH Key
 **On Personal Computer:**
@@ -57,5 +62,6 @@ class WhereAmI {
 
 This is what it should look like when you ssh into the remote computer from your personal computer now:
 ![](img8.png)
+---
 
 ## 6: Optimizing Remote Running
