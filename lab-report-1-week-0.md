@@ -20,5 +20,27 @@ On Personal Computer:
 - Type the commands cd, ls, pwd, mkdir <directory>, and cp <file/directory> on your personal computer
 
 ## 4: Moving Files with SCP
+- Create and save a file on your personal computer called WhereAmI.java with the following:
+class WhereAmI {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+  }
+}
+
+![](img5.png)
+
+On Personal Computer:
+- Run the commands javac WhereAmI.java and java WhereAmI
+- Run the command scp WhereAmI.java cs15lfa22xx@ieng6.ucsd.edu : ~/ using your two letter characters for xx. Enter your password.
+
+![](img6.png)
+
+On Remote Computer:
+![](img7.png)
+- Check that the file was copied over by running the commands javac WhereAmI.java and java WhereAmI
+
 ## 5: Setting an SSH Key
 ## 6: Optimizing Remote Running
