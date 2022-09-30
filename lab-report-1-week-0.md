@@ -60,10 +60,10 @@ This is what it should look like when you ssh into the remote computer from your
 
 ## 6: Optimizing Remote Running
 **On Your Computer:**
-- Make a local edit to the WhereAmI.java file
-- Use the up arrow to scp the WhereAmI.java file onto the remote computer
-- Up arrow to ssh into remote computer
-- Up arrow to javac the WhereAmI.java file
-- Up arrow to run java command
+- Make a local edit to WhereAmI.java
+- Use the up arrow twice to get the `scp WhereAmI.java cs15lfa22xx@ieng6.ucsd.edu:~/` command
+- Up arrow twice to get the `ssh cs15lfa22xx@ieng6.ucsd.edu` command
+- Up arrow thrice to get the `javac WhereAmI.java` command
+- Up arrow thrice to get the `java WhereAmI` command
 
 ![Remote Running](img9.png)
