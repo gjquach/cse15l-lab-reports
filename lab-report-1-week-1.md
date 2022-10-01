@@ -15,7 +15,7 @@
 - Type the commands `cd`, `ls`, `pwd`, `mkdir <directory>`, and `cp <file/directory>`
 ![Commands on Remote Computer](img3.png)
 
-- Exit the remote computer using CTRL-D or the command exit
+- Exit the remote server using CTRL-D or the command exit
 
 **On Personal Computer:**
 - Type the commands `cd`, `ls`, `pwd`, `mkdir <directory>`, and `cp <file/directory>` on your personal computer
@@ -55,7 +55,7 @@ class WhereAmI {
 **On Personal Computer:**
 - Command `scp /Users/<Your Personal User>/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 
-This is what it should look like when you ssh into the remote computer from your personal computer now:
+This is what it should look like when you ssh into the remote server from your personal computer now:
 ![With SSH Key](img8.png)
 
 ## 6: Optimizing Remote Running
