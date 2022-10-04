@@ -1,1 +1,1 @@
-![img](SS9-28.png)
+![img](images/SS9-28.png)
