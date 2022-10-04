@@ -12,6 +12,9 @@ Contact Me:
 I am an 18 year old born and raised in **San Francisco, CA**. I currently attend *UCSD*, 
 where I study computer science and compete on the NCAA DI women's volleyball team (Go Tritons!).  I am passionate about bridging the gender gap in STEM, and ran the San Francisco chapter of [Superposition](https://superposition.tech/) for two years in high school. I recently spent this past summer as an `Technology Support Intern` at the *San Francisco International Airport*. After graduating from *UCSD* in 2024, I hope to work as a software engineer to gain first hand experience in the field before becoming a high school computer science teacher.
 
+## Work Experience
+- *San Francisco International Airport* (San Francisco, CA)
+    > Technology Support Intern, Summer 2022
 ## Education
 * *University of California, San Diego* (La Jolla, CA)
     > Intended BS Computer Science, Fall 2022-Spring 2024
