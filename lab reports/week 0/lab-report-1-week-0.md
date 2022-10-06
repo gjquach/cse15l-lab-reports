@@ -1,1 +1,0 @@
-![img](images/SS9-28.png)
