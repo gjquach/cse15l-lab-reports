@@ -12,7 +12,15 @@
 
 ## 3: Trying Some Commands
 **On Remote Server:**
-- Type the commands `cd`, `ls`, `pwd`, `mkdir <directory>`, and `cp <file/directory>`
+
+Type the commands `cd`, `ls`, `pwd`, `mkdir <directory>`, and `cp <file/directory>`
+
+- `cd` (Change Directory) - change current working directory
+- `ls` (List) - list files and directories
+- `pwd` (Print Work Directory) - prints the current working directory path
+- `mkdir<directory>` (Make Directory) - makes a new directory or subdirectory
+- `cp <file/directory>` (copy) - copies a file/directory
+
 ![Commands on Remote Computer](img3.png)
 
 - Exit the remote server using CTRL-D or the command exit
@@ -44,7 +52,10 @@ class WhereAmI {
 ![](img7.png)
 
 ## 5: Setting an SSH Key
-**On Personal Computer:**
+**On Personal Computer:*
+- An SSH key is an access credential for the secure shell network protocol
+- It is helpful because it allows you to use SSH to establish an encrypted connection between a client and remote machine
+*
 - On your computer, run the command `ssh-keygen`
 - When you are prompted to “Enter file in which to save the key (/Users/<Your User>/.ssh/id_rsa):”, press enter to specify the default path
 - Command ssh cs15lfa22zz@ieng6.ucsd.edu, and enter your password when prompted to
