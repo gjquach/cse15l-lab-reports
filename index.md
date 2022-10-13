@@ -15,6 +15,7 @@ where I study computer science and compete on the NCAA DI women's volleyball tea
 ## Work Experience
 - *San Francisco International Airport* (San Francisco, CA)
     > Technology Support Intern, Summer 2022
+    
 ## Education
 * *University of California, San Diego* (La Jolla, CA)
     > Intended BS Computer Science, Fall 2022-Spring 2024
