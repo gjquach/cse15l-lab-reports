@@ -55,7 +55,7 @@ class WhereAmI {
 **On Personal Computer:*
 - An SSH key is an access credential for the secure shell network protocol
 - It is helpful because it allows you to use SSH to establish an encrypted connection between a client and remote machine
-*
+
 - On your computer, run the command `ssh-keygen`
 - When you are prompted to “Enter file in which to save the key (/Users/<Your User>/.ssh/id_rsa):”, press enter to specify the default path
 - Command ssh cs15lfa22zz@ieng6.ucsd.edu, and enter your password when prompted to
