@@ -1,4 +1,4 @@
-# Lab 1 Report
+# Lab Report 1
 ## 1: Installing VS Code
 - I already had VS Code downloaded from previous use, but I believe you can install for your respective OS at https://code.visualstudio.com/download 
 - Once installed and opened, VS Code should look something like this:
