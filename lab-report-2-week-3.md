@@ -67,7 +67,7 @@ class SearchEngine {
 - parameters = [s, book]
 - wordsWithSub = [books, cookbook]
 
-## Part 2
+## Part 2 - Bugs
 ### Array Methods - Reverse in Place
 **The failure-inducing input:** {1, 2, 3, 4, 5, 6}
 
