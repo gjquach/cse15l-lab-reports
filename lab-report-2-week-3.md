@@ -45,20 +45,26 @@ class SearchEngine {
 ```
 ![add books to list](addBooks.png)
 - Calls the handleRequest method
-- What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class
-- If those values change, how they change by the time the request is done processing
+- url = localhost:4000/add?s=books
+- parameters = [s, books]
+- listOfWords = [books]
 
 ![add cookbook to the list](addCookbook.png)
 - Calls the handleRequest method
-- What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class
-- If those values change, how they change by the time the request is done processing
+- url = localhost:4000/add?s=cookbook
+- parameters = [s, cookbook]
+- listOfWords =[books, cookbook]
 
 ![addWatch](addWatch.png)
 - Calls the handleRequest method
-- What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class
-- If those values change, how they change by the time the request is done processing
+- url = localhost:400/add?s=watch
+- parameters = [s, watch]
+- listOfWords = [books, cookbook, watch]
 
 ![test](list.png)
-- Which methods in your code are called
-- What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class
-- If those values change, how they change by the time the request is done processing
+- Calls the handleRequest method
+- url = localhost:4000/search?s=book
+- parameters = [s, book]
+- wordsWithSub = [books, cookbook]
+
+## Part 2
