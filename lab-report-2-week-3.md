@@ -68,3 +68,14 @@ class SearchEngine {
 - wordsWithSub = [books, cookbook]
 
 ## Part 2
+### Array Methods - Reverse in Place
+**The failure-inducing input (the code of the test):** {1, 2, 3, 4, 5, 6}
+![rip](RIPtest2.png)
+
+**The symptom (the failing test output):** {6, 5, 4, 4, 5, 6}
+![rip](riptestoutput.png)
+
+**The bug (the code fix needed):** arr was overrwritting itself by taking the value of another index as arr[i], but not assigning arr[i] back to another value, thus ending up with symmetrical arrays. See below how the bug is fixed by storing arr[i] in a temp variable, then reassigning it.
+![rip](RIPnew.png)
+
+Connection between the symptom and the bug: The array noted in the symptom is symmetrical, because the bug causes the array to take numbers from the opposite side, but does not reassign the original numbers, leaving it {1,1}.
