@@ -69,13 +69,24 @@ class SearchEngine {
 
 ## Part 2
 ### Array Methods - Reverse in Place
-**The failure-inducing input (the code of the test):** {1, 2, 3, 4, 5, 6}
+**The failure-inducing input:** {1, 2, 3, 4, 5, 6}
 ![rip](RIPtest2.png)
 
-**The symptom (the failing test output):** {6, 5, 4, 4, 5, 6}
+**The symptom:** array first differed at element [3]; expected:<3> but was: <4>
 ![rip](riptestoutput.png)
 
-**The bug (the code fix needed):** arr was overrwritting itself by taking the value of another index as arr[i], but not assigning arr[i] back to another value, thus ending up with symmetrical arrays. See below how the bug is fixed by storing arr[i] in a temp variable, then reassigning it.
+**The bug:** arr was overrwritting itself by taking the value of another index as arr[i], but not assigning arr[i] back to another value, thus ending up with symmetrical arrays. See below how the bug is fixed by storing arr[i] in a temp variable, then reassigning it.
 ![rip](RIPnew.png)
 
-Connection between the symptom and the bug: The array noted in the symptom is symmetrical, because the bug causes the array to take numbers from the opposite side, but does not reassign the original numbers, leaving it {1,1}.
+**Connection between the symptom and the bug:** The array noted in the symptom is symmetrical, because the bug causes the array to take numbers from the opposite side, but does not reassign the original numbers, leaving it {1,1}.
+
+### Array Methods - Average Without Lowest
+**The failure-inducing input):** {2.0, 2.0, 3.0, 4.0, 5.0}
+![rip](tawl.png)
+
+**The symptom:** java.lang.AssertionError: expected:<3.5> but was:<3.0>
+![tawlfail](tawlfail.png)
+
+**The bug:** When passing through every element of the array to get the sum without the lowest element, it uses the if(nums != lowest) statement. However, this statement does not account for the fact that there may be multiple of the lowest number. To fix this, the statement should be removed and the sum off all numbers should be collected and later to get the sum without the lowest the program can do sum - lowest.
+
+**Connection between the symptom and the bug:** The symptom was 3.0, which is 3.0+4.0+5.0 / 4. This happened because both of the 2.0 elements were omitted from the sum as they are both the "lowest".
