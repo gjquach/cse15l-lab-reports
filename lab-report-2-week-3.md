@@ -70,6 +70,7 @@ class SearchEngine {
 ## Part 2
 ### Array Methods - Reverse in Place
 **The failure-inducing input:** {1, 2, 3, 4, 5, 6}
+
 ![rip](riptest2.png)
 
 **The symptom:** array first differed at element [3]; expected:<3> but was: <4>
