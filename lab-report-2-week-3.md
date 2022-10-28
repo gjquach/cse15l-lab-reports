@@ -102,6 +102,7 @@ class SearchEngine {
 ![rip](riptest2.png)
 
 **The symptom:** array first differed at element [3]; expected:<3> but was: <4>
+
 ![rip](riptestoutput.png)
 
 **The bug:** arr was overrwritting itself by taking the value of another index as arr[i], but not assigning the value of arr[i], thus ending up with symmetrical arrays. For example, {1, 2, 3, 4, 5, 6} would rearrage into {6, 5, 4, 4, 5, 6}. See below how the bug is fixed by storing arr[i] in a temp variable, then reassigning it.
