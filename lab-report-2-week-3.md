@@ -105,15 +105,18 @@ class SearchEngine {
 ![rip](riptestoutput.png)
 
 **The bug:** arr was overrwritting itself by taking the value of another index as arr[i], but not assigning the value of arr[i], thus ending up with symmetrical arrays. For example, {1, 2, 3, 4, 5, 6} would rearrage into {6, 5, 4, 4, 5, 6}. See below how the bug is fixed by storing arr[i] in a temp variable, then reassigning it.
+
 ![rip](RIPnew.png)
 
 **Connection between the symptom and the bug:** The bug causes the array to take numbers from the opposite side, but does not reassign the original numbers, leaving it {6, 2, 3, 4, 5, 6} after the first pass, {6, 5, 3, 4, 5, 6} after the second pass and so on. Since the numbers are never truly swapped, at element [3], we end up with 4 as it mirrors element [2].
 
 ### List Methods - Filter
 **The failure-inducing input):** {2.0, 2.0, 3.0, 4.0, 5.0}
+
 ![rip](testFilter.png)
 
-**The symptom:** java.lang.AssertionError: expected:<[march, parch]> but was:<[parch, march]>
+**The symptom:** java.lang.AssertionError: expected:<[march, parch]> but was:<[parch, march]>.
+
 ![tawlfail](filterFail.png)
 
 **The bug:** In the for loop, after the if statement has determined that sc is in s, it does `result.add(0,s)`, which leads to the array list's contents being backwards. To fix this, the statement should be `result.add(s)`, so s is added to the end of the list instead of the front.
