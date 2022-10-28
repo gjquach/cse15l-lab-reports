@@ -53,7 +53,9 @@ class SearchEngine {
     - args = [4000]
     - port = 4000
     - The arguments in main do not change
+
 ---
+
 ![add cookbook to the list](addCookbook.png)
 - **Calls the handleRequest method**
     - url = localhost:4000/add?s=cookbook
@@ -64,7 +66,9 @@ class SearchEngine {
     - args = [4000]
     - port = 4000
     - The arguments in main do not change
+
 ---
+
 ![addWatch](addWatch.png)
 - **Calls the handleRequest method**
     - url = localhost:400/add?s=watch
@@ -75,7 +79,9 @@ class SearchEngine {
     - args = [4000]
     - port = 4000
     - The arguments in main do not change
+
 ---
+
 ![test](list.png)
 - **Calls the handleRequest method**
     - url = localhost:4000/search?s=book
@@ -86,7 +92,9 @@ class SearchEngine {
     - args = [4000]
     - port = 4000
     - The arguments in main do not change
+
 ---
+
 ## Part 2 - Bugs
 ### Array Methods - Reverse in Place
 **The failure-inducing input:** {1, 2, 3, 4, 5, 6}
@@ -101,13 +109,13 @@ class SearchEngine {
 
 **Connection between the symptom and the bug:** The bug causes the array to take numbers from the opposite side, but does not reassign the original numbers, leaving it {6, 2, 3, 4, 5, 6} after the first pass, {6, 5, 3, 4, 5, 6} after the second pass and so on. Since the numbers are never truly swapped, at element [3], we end up with 4 as it mirrors element [2].
 
-### Array Methods - Average Without Lowest
+### List Methods - Filter
 **The failure-inducing input):** {2.0, 2.0, 3.0, 4.0, 5.0}
-![rip](tawl.png)
+![rip](testFilter.png)
 
-**The symptom:** java.lang.AssertionError: expected:<3.5> but was:<3.0>
-![tawlfail](tawlfail.png)
+**The symptom:** java.lang.AssertionError: expected:<[march, parch]> but was:<[parch, march]>
+![tawlfail](filterFail.png)
 
-**The bug:** When passing through every element of the array to get the sum without the lowest element, it uses the `if(nums != lowest)` statement. However, this statement does not account for the fact that there may be multiple of the lowest number. To fix this, the statement should be removed and the sum off all numbers should be collected and later to get the sum without the lowest the program can do sum - lowest.
+**The bug:** In the for loop, after the if statement has determined that sc is in s, it does `result.add(0,s)`, which leads to the array list's contents being backwards. To fix this, the statement should be `result.add(s)`, so s is added to the end of the list instead of the front.
 
-**Connection between the symptom and the bug:** The symptom was 3.0, which is 3.0+4.0+5.0 / 4. This happened because both of the 2.0 elements were omitted from the sum as they are both the "lowest".
+**Connection between the symptom and the bug:** The symptom was <[parch, march]>. This happened because `result.add(0,s)` sent parch to the 0 index position, when it should've just been sent to the back of the list to be <[march,parch]>
