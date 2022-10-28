@@ -87,7 +87,7 @@ class SearchEngine {
     - url = localhost:4000/search?s=book
     - parameters = [s, book]
     - wordsWithSub = [books, cookbook]
-    - wordsWithSub is first intialized in handleRequest as an empty array list which is []. Then wordsWithSub adds book and cookbook to the array list and it becomes [books, cookbook].
+    - wordsWithSub is first intialized in handleRequest as an empty array list which is []. Then wordsWithSub adds books to the array list and it becomes [books]. Then wordsWithSub adds cookbook to the array list and it becomes [books, cookbook].
 - **Calls the main method**
     - args = [4000]
     - port = 4000
