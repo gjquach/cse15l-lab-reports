@@ -61,7 +61,7 @@ class SearchEngine {
     - url = localhost:4000/add?s=cookbook
     - parameters = [s, cookbook]
     - listOfWords =[books, cookbook]
-    - listOfWords adds books to the array list and it changes from [books] to [books, cookbook].
+    - listOfWords adds cookbook to the array list and it changes from [books] to [books, cookbook].
 - **Calls the main method**
     - args = [4000]
     - port = 4000
