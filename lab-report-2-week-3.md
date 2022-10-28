@@ -44,29 +44,49 @@ class SearchEngine {
 }
 ```
 ![add books to list](addBooks.png)
-- Calls the handleRequest method
-- url = localhost:4000/add?s=books
-- parameters = [s, books]
-- listOfWords = [books]
-
+- **Calls the handleRequest method**
+    - url = localhost:4000/add?s=books
+    - parameters = [s, books]
+    - listOfWords = [books]
+    - listOfWords is first initialized in Handler as a empty array list, which is []. Then, listOfWords adds books to the array list and it becomes [books].
+- **Calls the main method**
+    - args = [4000]
+    - port = 4000
+    - The arguments in main do not change
+---
 ![add cookbook to the list](addCookbook.png)
-- Calls the handleRequest method
-- url = localhost:4000/add?s=cookbook
-- parameters = [s, cookbook]
-- listOfWords =[books, cookbook]
-
+- **Calls the handleRequest method**
+    - url = localhost:4000/add?s=cookbook
+    - parameters = [s, cookbook]
+    - listOfWords =[books, cookbook]
+    - listOfWords adds books to the array list and it changes from [books] to [books, cookbook].
+- **Calls the main method**
+    - args = [4000]
+    - port = 4000
+    - The arguments in main do not change
+---
 ![addWatch](addWatch.png)
-- Calls the handleRequest method
-- url = localhost:400/add?s=watch
-- parameters = [s, watch]
-- listOfWords = [books, cookbook, watch]
-
+- **Calls the handleRequest method**
+    - url = localhost:400/add?s=watch
+    - parameters = [s, watch]
+    - listOfWords = [books, cookbook, watch]
+    - listOfWords adds watch to the array list and it changes from [books, cookbook] to [books, cookbook, watch].
+- **Calls the main method**
+    - args = [4000]
+    - port = 4000
+    - The arguments in main do not change
+---
 ![test](list.png)
-- Calls the handleRequest method
-- url = localhost:4000/search?s=book
-- parameters = [s, book]
-- wordsWithSub = [books, cookbook]
-
+- **Calls the handleRequest method**
+    - url = localhost:4000/search?s=book
+    - parameters = [s, book]
+    - wordsWithSub = [books, cookbook]
+    - wordsWithSub is first intialized in handleRequest as an empty array list which is []. Then wordsWithSub adds book and cookbook to the array list and it becomes [books, cookbook].
+- **Calls the main method**
+    - args = [4000]
+    - port = 4000
+    - The arguments in main do not change
+---
 ## Part 2 - Bugs
 ### Array Methods - Reverse in Place
 **The failure-inducing input:** {1, 2, 3, 4, 5, 6}
