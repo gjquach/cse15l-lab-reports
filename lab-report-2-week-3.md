@@ -111,7 +111,7 @@ class SearchEngine {
 **Connection between the symptom and the bug:** The bug causes the array to take numbers from the opposite side, but does not reassign the original numbers, leaving it {6, 2, 3, 4, 5, 6} after the first pass, {6, 5, 3, 4, 5, 6} after the second pass and so on. Since the numbers are never truly swapped, at element [3], we end up with 4 as it mirrors element [2].
 
 ### List Methods - Filter
-**The failure-inducing input):** {2.0, 2.0, 3.0, 4.0, 5.0}
+**The failure-inducing input):**  [“march”, “parch”, “book”]
 
 ![rip](testFilter.png)
 
