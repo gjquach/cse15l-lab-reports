@@ -26,6 +26,7 @@ Larry Gentilello asserted that effective treatments already
 Larry M. Gentilello, MD
 Response to Dr. Larry Gentilello's Presentation
 Jeffrey Runge agreed with Larry Gentilello that health
+
 ```
 - `grep -h "Larry" technical/government/Alcohol_Problems/*.txt > larry.txt` stores the lines in technical/government/Alcohol_Problems/*.txt that contain "Larry" in fugitive-results.txt. It's useful because it allows us to find short excerpts regarding Larry and his work.
 
