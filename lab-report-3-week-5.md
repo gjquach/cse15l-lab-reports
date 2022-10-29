@@ -1,44 +1,44 @@
 # Lab Report 3
 ## Command: Grep
-### grep -h
+### grep -h: displays the matched lines
 ```
 grep -h "base pair" technical/plos/*.txt > bp-results.txt
-docsearch:432$ cat bp-results.txt
+cat bp-results.txt
 sequence, which is a specific series of eight base pairs in the DNA of the bacterial
 chromosomes, on the order of one or two thousand base pairs of DNA (or less—their length is
 Watson-Crick base pairing, the proximity of the synthetic reactive groups elevates their
 ```
-- grep -h displays the matched lines
+- `grep -h "base pair" technical/plos/*.txt > bp-results.txt` stores the lines in technical/plos/*.txt that contain "base pair" in bp-results.txt. It's useful because it allows us to find short excerpts and get some context around the sentences in which "base pair" is used in.
 
 ```
-docsearch:445$ grep -h "fugitive" technical/911report/*.txt > bp-results.txt
-cat bp-results.txt
+grep -h "fugitive" technical/911report/*.txt > fugitive-results.txt
+cat fugitive-results.txt
 In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian
 in tracking fugitives, with much local police knowledge. The department's Drug
 fugitives. Responsibility for KSM was transferred to this branch, which gave the CIA
 ```
-- what it's doing and why it's useful
+- `grep -h "fugitive" technical/911report/*.txt > fugitive-results.txt` stores the lines in technical/911report/*.txt that contain "fugitive" in fugitive-results.txt. It's useful because it allows us to find short excerpts and get some context around the sentences in which "fugitive" is used in.
 
 ```
-grep -h "Larry" technical/government/Alcohol_Problems/*.txt > bp-results.txt
-cat bp-results.txt
+grep -h "Larry" technical/government/Alcohol_Problems/*.txt > larry-results.txt
+cat larry-results.txt
 Larry Gentilello asserted that effective treatments already
 Larry M. Gentilello, MD
 Response to Dr. Larry Gentilello's Presentation
 Jeffrey Runge agreed with Larry Gentilello that health
 ```
-- what it's doing and why it's useful
-
-### grep -l
+- `grep -h "Larry" technical/government/Alcohol_Problems/*.txt > larry.txt` stores the lines in technical/government/Alcohol_Problems/*.txt that contain "Larry" in fugitive-results.txt. It's useful because it allows us to find short excerpts regarding Larry and his work.
+---
+### grep -l: displays the list of file names of which contents include matched word
 ```
 grep -l "base pair" technical/plos/*.txt > bp-results.txt
 cat bp-results.txt
 technical/plos/journal.pbio.0020190.txt
 technical/plos/journal.pbio.0020223.txt
 ```
-- what it's doing and why it's useful
+- `grep -l "base pair" technical/plos/*.txt > bp-results.txt` stores the files names of files in technical/plos/*.txt that contain "base pair" in the file bp-results. It's useful because it allows for the user to easily pull up the files that regard base pair.
 ```
-grep -l "pathologist" technical/plos/*.txt > bp-results.txt                       
+grep -l "pathologist" technical/plos/*.txt > path-results.txt                       
 cat bp-results.txt
 technical/plos/journal.pbio.0020012.txt
 technical/plos/journal.pbio.0020121.txt
@@ -46,9 +46,9 @@ technical/plos/pmed.0020017.txt
 technical/plos/pmed.0020045.txt
 technical/plos/pmed.0020060.txt
 ```
-- what it's doing and why it's useful
+- `grep -l "pathologist" technical/plos/*.txt > path-results.txt` stores the files names of files in technical/plos/*.txt that contain "pathologist" in the file path-results. It's useful because it allows for the user to easily pull up scientific papers in which a pathologist was involved.
 ```
-grep -l "GABA" technical/biomed/*.txt > bp-results.txt
+grep -l "GABA" technical/biomed/*.txt > gaba-results.txt
 cat bp-results.txt
 technical/biomed/1471-2091-3-15.txt
 technical/biomed/1471-2091-3-16.txt
@@ -62,7 +62,7 @@ technical/biomed/1471-2210-1-2.txt
 technical/biomed/1471-2210-3-3.txt
 technical/biomed/1472-6807-2-1.txt
 ```
-- what it's doing and why it's useful
+- `grep -l "GABA" technical/biomed/*.txt > gaba-results.txt` stores the files names of files in technical/plos/*.txt that contain "GABA" in the file gaba-results. It's useful because it allows for the user to easily pull up the scientific papers that refer to GABA. 
 
 ### grep -n
 ```
