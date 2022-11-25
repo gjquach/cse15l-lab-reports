@@ -76,9 +76,34 @@ echo "Done"
 ![terminal](fileTerm.png)
 ![filter](fileName.png)
 
-## Trace of Student Submission #1
+## Trace of Student Submission #1:
+### https://github.com/ucsd-cse15l-f22/list-methods-compile-error
+
 ### For each line with a command, what its standard output and standard error are for this run, and whether its return code was zero or nonzero
 
-### For each line with an if statement, whether the condition was true or false, and why
+### If statement: T/F Conditions
+1. ``if [[ ! -f ListExamples.java ]]``
+
+True, because the ListExamples.java does exist in the current directory.
+
+2. ``if [[ $EXIT -ne 0 ]]``
+
+False, because ``javac ListExamples.java 2> ErrorMsg.txt`` results in exit code 1, which is not equal to 0.
+
+3. ``if [[ $(grep -c "result.add(0, s);" ListExamples.java) -eq 1 ]]``
+
+Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
+
+4. ``if [[ $(grep -c "interface StringChecker { boolean checkString(String s); }" ListExamples.java) -eq 0 ]]``
+
+Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
+
+5. ``if [[ $(grep -c "static List<String> filter(List<String> list, StringChecker sc) {" ListExamples.java) -eq 0 ]]``
+
+Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
+
+6. ``if [[ $(grep -c "  static List<String> merge(List<String> list1, List<String> list2) {" ListExamples.java) -eq 0 ]]``
+
+Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
 
 ### Indicate each line that does not run (maybe because it is in an if branch that doesn’t evaluate, or after an early exit)
