@@ -233,7 +233,7 @@ removed directory 'student-submission'
 
 **Standard Output:** None
 
-**Standard Error:** None
+**Standard Error:** 
 ```
 ListExamples.java:15: error: ';' expected
         result.add(0, s)
