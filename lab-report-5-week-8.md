@@ -149,7 +149,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``git clone --quiet $1 student-submission``
+``git clone $1 student-submission``
 
 **Standard Output:** None
 
@@ -159,7 +159,9 @@ removed directory 'student-submission'
 
 ``cp TestListExamples.java student-submission``
 
-**Standard Output:** None
+**Standard Output:** 
+
+``'TestListExamples.java' -> 'student-submission/TestListExamples.java'``
 
 **Standard Error:** None
 
@@ -167,7 +169,12 @@ removed directory 'student-submission'
 
 ``cp -r lib student-submission``
 
-**Standard Output:** None
+**Standard Output:** 
+```
+'lib' -> 'student-submission/lib'
+'lib/junit-4.13.2.jar' -> 'student-submission/lib/junit-4.13.2.jar'
+'lib/hamcrest-core-1.3.jar' -> 'student-submission/lib/hamcrest-core-1.3.jar'
+```
 
 **Standard Error:** None
 
