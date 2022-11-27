@@ -82,7 +82,7 @@ echo "Done"
 ---
 
 ### Standard Output, Standard Error, and Return Code
-``set -e``
+- ``set -e``
 
 **Standard Output:** None
 
@@ -90,7 +90,7 @@ echo "Done"
 
 **Return Code:** Zero
 
-``rm -rf student-submission``
+- ``rm -rf student-submission``
 
 **Standard Output:** 
 ```
@@ -149,7 +149,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``git clone $1 student-submission``
+- ``git clone $1 student-submission``
 
 **Standard Output:** None
 
@@ -157,17 +157,17 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``cp TestListExamples.java student-submission``
+- ``cp TestListExamples.java student-submission``
 
 **Standard Output:** 
 
-``'TestListExamples.java' -> 'student-submission/TestListExamples.java'``
+- ``'TestListExamples.java' -> 'student-submission/TestListExamples.java'``
 
 **Standard Error:** None
 
 **Return Code:** Zero
 
-``cp -r lib student-submission``
+- ``cp -r lib student-submission``
 
 **Standard Output:** 
 ```
@@ -180,7 +180,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``cd student-submission``
+- ``cd student-submission``
 
 **Standard Output:** None
 
@@ -188,7 +188,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``if [[ ! -f ListExamples.java ]]``
+- ``if [[ ! -f ListExamples.java ]]``
 
 **Standard Output:** None
 
@@ -197,7 +197,7 @@ removed directory 'student-submission'
 **Return Code:** Zero
 
 
-``echo "Does not contain file, change file name to ListExamples.``
+- ``echo "Does not contain file, change file name to ListExamples.``
 
 **Standard Output:** None
 
@@ -205,7 +205,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``java or move out of nested directory. Score: 0/100."``
+- ``java or move out of nested directory. Score: 0/100."``
 
 **Standard Output:** None
 
@@ -213,7 +213,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``exit 0``
+- ``exit 0``
 
 **Standard Output:** None
 
@@ -221,7 +221,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``set +e``
+- ``set +e``
 
 **Standard Output:** None
 
@@ -229,7 +229,7 @@ removed directory 'student-submission'
 
 **Return Code:** Zero
 
-``javac ListExamples.java 2> ErrorMsg.txt``
+- ``javac ListExamples.java 2> ErrorMsg.txt``
 
 **Standard Output:** None
 
@@ -243,7 +243,7 @@ ListExamples.java:15: error: ';' expected
 
 **Return Code:** Zero
 
-``if [[ $EXIT -ne 0 ]]``
+- ``if [[ $EXIT -ne 0 ]]``
 
 **Standard Output:** None
 
@@ -251,7 +251,7 @@ ListExamples.java:15: error: ';' expected
 
 **Return Code:** Zero
 
-``echo "ListExamples.java did not compile. Exit code $EXIT. Score: 0/100."``
+- ``echo "ListExamples.java did not compile. Exit code $EXIT. Score: 0/100."``
 
 **Standard Output:** None
 
@@ -259,7 +259,7 @@ ListExamples.java:15: error: ';' expected
  
 **Return Code:** Zero
 
-``exit 0``
+- ``exit 0``
 
 **Standard Output:** None
 
