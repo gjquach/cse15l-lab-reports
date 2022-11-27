@@ -270,27 +270,27 @@ ListExamples.java:15: error: ';' expected
 ---
 
 ### If Statement: T/F Conditions
-1. ``if [[ ! -f ListExamples.java ]]``
+- ``if [[ ! -f ListExamples.java ]]``
 
 True, because the ListExamples.java does exist in the current directory.
 
-2. ``if [[ $EXIT -ne 0 ]]``
+- ``if [[ $EXIT -ne 0 ]]``
 
 False, because ``javac ListExamples.java 2> ErrorMsg.txt`` results in exit code 1, which is not equal to 0.
 
-3. ``if [[ $(grep -c "result.add(0, s);" ListExamples.java) -eq 1 ]]``
+- ``if [[ $(grep -c "result.add(0, s);" ListExamples.java) -eq 1 ]]``
 
 Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
 
-4. ``if [[ $(grep -c "interface StringChecker { boolean checkString(String s); }" ListExamples.java) -eq 0 ]]``
+- ``if [[ $(grep -c "interface StringChecker { boolean checkString(String s); }" ListExamples.java) -eq 0 ]]``
 
 Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
 
-5. ``if [[ $(grep -c "static List<String> filter(List<String> list, StringChecker sc) {" ListExamples.java) -eq 0 ]]``
+- ``if [[ $(grep -c "static List<String> filter(List<String> list, StringChecker sc) {" ListExamples.java) -eq 0 ]]``
 
 Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
 
-6. ``if [[ $(grep -c "  static List<String> merge(List<String> list1, List<String> list2) {" ListExamples.java) -eq 0 ]]``
+- ``if [[ $(grep -c "  static List<String> merge(List<String> list1, List<String> list2) {" ListExamples.java) -eq 0 ]]``
 
 Does not run becuase the program has exited after ``if [[ $EXIT -ne 0 ]]``. 
 
